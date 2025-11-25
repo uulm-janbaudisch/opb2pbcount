@@ -1,0 +1,12 @@
+[package]
+name = "opb2pbcount"
+description = "Converter for the OPB format to be used by pbcount"
+version = "0.1.0"
+edition = "2024"
+license = "LGPL-3"
+repository = "https://github.com/uulm-janbaudisch/opb2pbcount.git"
+
+[dependencies]
+bimap = "0.6"
+clap = { version = "4", features = ["derive"] }
+p2d_opb = "0.2"
