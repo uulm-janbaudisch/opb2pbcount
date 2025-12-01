@@ -3,7 +3,11 @@
 > Converter for the OPB format to be used by pbcount
 
 This tool takes an OPB file and modifies it in such a way that it can be consumed by [pbcount][pbcount].
-Specifically, pbcount only accepts variables in the form of `x1`, `x2`, ...
+
+The following changes are made to the formua:
+ - variables are put in the form of `x1`, `x2`, ...
+ - constraints are changed to only `=` or `>=`
+ - fails on constraint type `!=`
 
 ## Installation
 
