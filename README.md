@@ -1,3 +1,5 @@
+![Crates.io Version](https://img.shields.io/crates/v/opb2pbcount)
+
 # opb2pbcount
 
 > Converter for the OPB format to be used by pbcount
