@@ -15,7 +15,9 @@ let
       system = pkgs.stdenv.buildPlatform.system;
     in
     fenix.packages.${system}.combine [
-      fenix.packages.${system}.stable.defaultToolchain
+      fenix.packages.${system}.stable.minimalToolchain
+      fenix.packages.${system}.stable.rustfmt
+      fenix.packages.${system}.stable.clippy
       fenix.packages.${system}.targets.${target}.stable.rust-std
     ];
 
