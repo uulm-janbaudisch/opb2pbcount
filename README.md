@@ -1,4 +1,4 @@
-![Crates.io Version](https://img.shields.io/crates/v/opb2pbcount)
+[![Crates.io Version](https://img.shields.io/crates/v/opb2pbcount)](https://crates.io/crates/opb2pbcount)
 
 # opb2pbcount
 
