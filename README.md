@@ -6,7 +6,7 @@
 
 This tool takes an OPB file and modifies it in such a way that it can be consumed by [pbcount][pbcount].
 
-The following changes are made to the formua:
+The following changes are made to the formula:
  - variables are put in the form of `x1`, `x2`, ...
  - constraints are changed to only `=` or `>=`
  - fails on constraint type `!=`
