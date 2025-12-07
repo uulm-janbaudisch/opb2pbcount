@@ -43,6 +43,18 @@
             craneLibDefault = crane.mkLib pkgs;
             inherit fenix;
           };
+
+          container = pkgs.dockerTools.buildLayeredImage {
+            name = "opb2pbcount";
+            contents = [ self.packages.${system}.default ];
+            config = {
+              Entrypoint = [ "/bin/opb2pbcount" ];
+              Labels = {
+                "org.opencontainers.image.source" = "https://github.com/uulm-janbaudisch/opb2pbcount";
+                "org.opencontainers.image.description" = "Converter for the OPB format to be used by pbcount";
+              };
+            };
+          };
         }
       );
       checks = lib.genAttrs systems (
