@@ -46,7 +46,10 @@
 
           container = pkgs.dockerTools.buildLayeredImage {
             name = "opb2pbcount";
-            contents = [ self.packages.${system}.default ];
+            contents = [
+              self.packages.${system}.default
+              pkgs.time
+            ];
             config = {
               Entrypoint = [ "/bin/opb2pbcount" ];
               Labels = {
